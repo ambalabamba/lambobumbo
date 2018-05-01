@@ -4,7 +4,6 @@ import random
 
 def spam():
     threading.Timer(0.001, spam).start()
-    List = ['http://discourse.xgenstudios.com/t/forum-staff-impersonation/1579', 'http://discourse.xgenstudios.com/t/a-new-stick-rpg-is-what-we-all-want/1588', 'http://discourse.xgenstudios.com/t/season-1-discussion/1547']
-    url = "".join(random.choice(List))
-    requests.get(url)       
+    string = "00100020!#$%&'()*+,-./00300123456789:;<=>?0040@ABCDEFGHIJKLMNO0050PQRSTUVWXYZ[\]^_0060`abcdefghijklmno0070pqrstuvwxyz{|}~␡0080009000A0 ¡¢£¤¥¦§¨©ª«¬ ®¯00B0°±²³´µ¶·¸¹º»¼½¾¿00C0ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ00D0ÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß00E0àáâãäåæçèéêëìíîï00F0ðñòóôõö÷øùúûüýþÿ0100ĀāĂăĄąĆćĈĉĊċČčĎď0110ĐđĒēĔĕĖėĘęĚěĜĝĞğ0120ĠġĢģĤĥĦħĨĩĪīĬĭĮį0130İıĲĳĴĵĶķĸĹĺĻļĽľĿ0140ŀŁłŃńŅņŇňŉŊŋŌōŎŏ0150ŐőŒœŔŕŖŗŘřŚśŜŝŞş0160ŠšŢţŤťŦŧŨũŪūŬŭŮů0170ŰűŲųŴŵŶŷŸŹźŻżŽžſ0180ƀƁƂƃƄƅƆƇƈƉƊƋƌƍƎƏ0190ƐƑƒƓƔƕƖƗƘƙƚƛƜƝƞƟ01A0ƠơƢƣƤƥƦƧƨƩƪƫƬƭƮƯ01B0ưƱƲƳƴƵƶƷƸƹƺƻƼƽƾƿ01C0ǀǁǂǃǄǅǆǇǈǉǊǋǌǍǎǏ01D0ǐǑǒǓǔǕǖǗǘǙǚǛǜǝǞǟ01E0ǠǡǢǣǤǥǦǧǨǩǪǫǬǭǮǯ01F0ǰǱǲǳǴǵǶǷǸǹǺǻǼǽǾǿ"
+    requests.get("http://api.xgenstudios.com/?method=xgen.stats.submit&username=weathernowdays&password=lol&game_id=TW3&stat_id=wins&value=" + string)       
 spam()
